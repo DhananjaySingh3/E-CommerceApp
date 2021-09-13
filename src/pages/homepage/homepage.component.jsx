@@ -45,9 +45,11 @@ const HomePage = () => {
 export default HomePage;
 */
 
-const HomePage = () => {
+// const HomePage = ({history}) => {
+    const HomePage = () => {
     return (
         <div className="homepage">
+          {/* <DirectoryMenu history={history}></DirectoryMenu>*/} 
             <DirectoryMenu></DirectoryMenu>
         </div>
     );

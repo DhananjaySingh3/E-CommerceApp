@@ -75,6 +75,7 @@ class DirectoryMenu extends React.Component {
             <div className="directory-menu">
                 {this.state.menuSections.map(
                     ({ title, id, imageUrl, size }) => (
+                        // Prop Tunneling from Directory to menuitem: <MenuItem title={title} imageUrl={imageUrl} key={id} size={size} history={this.props.history} />
                         <MenuItem title={title} imageUrl={imageUrl} key={id} size={size} />
                     )
                 )
